@@ -76,7 +76,7 @@ const InputField = ({ id, name, type, placeholder, value, onChange, icon, showPa
 // Left Section - Illustration Component
 const IllustrationSection = () => {
   return (
-    <div className="w-full md:w-1/2 bg-white relative overflow-hidden flex flex-col">
+    <div className="hidden lg:w-1/2 lg:flex lg:flex-col bg-white relative overflow-hidden">
       {/* Subtle Dot Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0" style={{ opacity: 0.27 }}>
@@ -119,9 +119,9 @@ const IllustrationSection = () => {
 // Right Section - Login Form Component
 const LoginForm = ({ formData, formError, isLoading, handleChange, handleSubmit, showPassword, handleTogglePassword }) => {
   return (
-    <div className="w-full md:w-1/2 flex items-center justify-center p-4 sm:p-6 md:p-8 bg-white min-h-screen md:min-h-0 relative">
+    <div className="w-full lg:w-1/2 flex items-center justify-center p-4 sm:p-6 md:p-8 bg-white min-h-screen lg:min-h-0 relative">
       {/* Vertical Line - Not full length, positioned in center */}
-      <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300" style={{ height: '90%', width: '3px' }}></div>
+      <div className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300" style={{ height: '90%', width: '3px' }}></div>
       
       <div className="max-w-sm sm:max-w-md w-full space-y-6 sm:space-y-8">
         {/* Logo */}
@@ -213,7 +213,7 @@ const LoginForm = ({ formData, formError, isLoading, handleChange, handleSubmit,
 // Main Login Layout Component
 const LoginLayout = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className="min-h-screen flex flex-col lg:flex-row">
       {children}
     </div>
   );
